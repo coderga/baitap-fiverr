@@ -1,0 +1,31 @@
+.guides {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  .guides__title {
+    display: flex;
+    align-items: center;
+    padding-bottom: $padding-3 + 4;
+    h2 {
+      margin-bottom: 0;
+      flex: 1 1 auto;
+    }
+
+    a {
+      width: 20%;
+      text-align: right;
+      margin-bottom: 0;
+      text-decoration: none;
+      font-size: $font-size-0 + 1;
+      color: $color-blue-2;
+      .fa-angle-right {
+        vertical-align: middle !important;
+        font-size: $font-size-1;
+      }
+    }
+  }
+  .row {
+
+  }
+}

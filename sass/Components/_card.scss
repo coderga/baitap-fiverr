@@ -1,0 +1,177 @@
+.recently__card {
+  // width: 275px;
+  margin-right: 1px;
+  box-sizing: border-box;
+  .card {
+    border: 1px solid $color-brown-12;
+    border-radius: 0;
+    .card-img-top {
+      position: relative;
+      border-radius: 0;
+    }
+    .video-player-progress {
+      position: absolute;
+      right: 5px;
+      top: 12px;
+      cursor: pointer;
+    }
+    .card-body {
+      padding: 0;
+      .media {
+        padding: $padding-1 + 2 $padding-1 - 2;
+        img {
+          margin-right: $margin-1 - 2;
+        }
+        .media-body {
+          a {
+            font-size: $font-size-0 - 1;
+            color: $color-black-1;
+          }
+          p {
+            font-size: $font-size-0 - 1;
+            color: $color-brown-5;
+          }
+        }
+      }
+      .card-title {
+        padding: 0 $padding-1 + 2 $padding-0;
+        margin-top: $margin-0;
+        margin-bottom: 0;
+        @include styleText($color-black-2, $font-size-0 + 1, $font-weight-1);
+        // .card-body:hover .card-title{
+        //   @include styleText($color-green-0, $font-size-0 + 1, $font-weight-1);
+        // }
+      }
+
+      .star {
+        font-size: $font-size-0 - 1;
+        font-weight: $font-weight-2;
+        padding: $padding-1 $padding-1 + 2;
+        span:first-child {
+          margin-right: $margin-0;
+        }
+        span {
+          color: $color-yellow-0;
+        }
+        span:last-child {
+          color: $color-brown-5;
+        }
+      }
+    }
+    .card-footer {
+      background-color: $color-white;
+      padding: $padding-1 $padding-1 + 2;
+      border-top: 1px solid $color-brown-13;
+      .card-text {
+        width: 100%;
+        text-align: right;
+
+        a {
+          @include styleText($color-brown-6, $font-size-0 - 3, $font-weight-0);
+          text-decoration: none;
+        }
+        span {
+          font-size: $font-size-1 - 2;
+          margin-left: $margin-1 - 2;
+        }
+      }
+    }
+  }
+}
+
+.popular__card {
+  border: 0 solid transparent;
+  cursor: pointer;
+  .card-img-overlay {
+    padding: $padding-2 + 1;
+    .card-text {
+      font-size: $font-size-0 - 1;
+      margin-bottom: 0;
+      line-height: 130%;
+    }
+    .card-title {
+      font-size: $font-size-2 - 1;
+    }
+    
+  }
+  &:hover img{
+    opacity: .85;
+    transition: all .3s;
+  }
+}
+
+
+
+.freelancers__carousel {
+  margin-right: 1px;
+  box-sizing: border-box;
+  .card {
+    border-radius: 4px;
+    box-shadow: 0 0.14px 2.29266px $color-shadow-1, 0 0.37px 4.42626px $color-shadow-2, 0 3px 7px $color-shadow-3;
+    .card-img-top {
+      height: 237px;
+      position: relative;
+      transition: all .3s;
+      &:hover{
+        opacity: .85;
+        transition: all .3s;
+      }
+    }
+    .card-body {
+      padding: 0;
+      .media {
+        padding: $padding-2 + 1 0 $padding-1 + 2 $padding-1 + 1;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: $margin-1 + 2;
+        }
+        .media-body {
+          span{
+            line-height: $line-height-1 - 3;
+          b{            
+            display: block;
+            a{
+              color: $color-brown-1;
+              text-decoration: none;
+            }
+
+          }
+          a {
+            font-size: $font-size-0 - 1;
+            color: $color-brown-10;
+            font-weight: $font-weight-1;
+            text-decoration: none;
+          }
+          }
+        }
+      }
+  }
+}
+}
+
+
+.guides__card{
+  border: 0;
+  cursor: pointer;
+  .card-img-top{
+    margin-bottom: $margin-2 - 4;
+    transition: all .5;
+    &:hover{
+      opacity: .85;
+    }
+  }
+  .card-body{
+    padding: 0;
+    .card-title{
+      margin-bottom: 2px;
+      font-size: $font-size-1 - 2;
+      color: $color-brown-1;
+    }
+    .card-text{
+      font-size: $font-size-0 + 1;
+      color: $color-brown-4;
+    }
+  }
+}

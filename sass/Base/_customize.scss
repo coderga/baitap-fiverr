@@ -1,0 +1,64 @@
+.owl-carousel {
+  .owl-nav {
+    button {
+
+      &.owl-prev,
+      &.owl-next {
+        color: $color-blue-0;
+        background-color: $color-white;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        box-shadow: 0 2px 5px 0 $color-shadow-0;
+        position: absolute;
+        top: 35%;
+
+        span {
+          font-size: $font-size-5;
+          line-height: 24px;
+        }
+
+        &:hover {
+          background-color: $color-white;
+          color: $color-blue-0;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      &.owl-prev {
+        left: -30px;
+      }
+
+      &.owl-next {
+        right: -30px;
+      }
+    }
+  }
+}
+
+
+.video__img {
+  cursor: pointer;
+
+  img {
+    width: 100% !important;
+    height: auto !important;
+    position: relative;
+  }
+
+  &.video__img::after {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: url(../img/desktop-play-button.c1196d6.png) no-repeat;
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

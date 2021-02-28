@@ -1,0 +1,31 @@
+.freelancers {    
+  background-color: $color-brown-15;
+  padding-bottom: 96px;
+  padding-top: 96px;
+  .freelancers__content {
+    width: 90%;
+    margin: 0 auto;
+    .freelancers__title {
+      display: flex;
+      align-items: center;
+      padding-bottom: $padding-3 + 4;
+      h2 {
+        margin-bottom: 0;
+        flex: 1 1 auto;
+      }
+
+      a {
+        width: 30%;
+        text-align: right;
+        margin-bottom: 0;
+        text-decoration: none;
+        font-size: $font-size-0 + 1;
+        color: $color-blue-2;
+        .fa-angle-right {
+          vertical-align: middle !important;
+          font-size: $font-size-1;
+        }
+      }
+    }
+  }
+}

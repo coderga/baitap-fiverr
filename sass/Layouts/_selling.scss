@@ -1,0 +1,33 @@
+.selling{
+    margin: 0 auto;
+    padding-bottom: 96px;
+    padding-top: 96px;
+    background-color: $color-0;
+    .row{
+        width: 90%;
+        margin: 0 auto;
+        .selling__content{
+            padding-right: 11%;
+            h2{
+                padding-bottom: $padding-3 + 4;
+                font-size: $font-size-3 + 2;
+                line-height: 120%;
+                font-weight: $font-weight-2;
+                color: $color-brown-1;
+            }
+            .selling__item{
+                .item__title{
+                    padding-bottom: $padding-1 - 2;
+                    font-size: $font-size-1 - 2;
+                    color: $color-brown-1;
+                    font-weight: $font-weight-2;
+                    line-height: 140%;
+                }
+                p{
+                    font-size: $font-size-1 - 2;
+                    line-height: $line-height-1 + 2;
+                }
+            }
+        }
+    }
+}

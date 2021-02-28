@@ -1,0 +1,48 @@
+.explore {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  padding-top: 96px;
+  h2{
+    margin-bottom: $margin-4;
+  }
+  .row {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    div {
+      // padding-bottom: $padding-5;
+      margin-bottom: $margin-6;
+      img {
+        width: 48px;
+        height: 48px;
+        text-align: center;
+        margin-bottom: $margin-1 + 5;
+      }
+      p{
+        padding: 0;
+        margin: 0;
+      }
+      a{
+        color: $color-black-2;
+        text-align: center;
+        position: relative;
+      }
+      a::after{
+        content: "";
+        position: absolute;
+        top: 40px;
+        right: 50%;
+        transform: translateX(50%);
+        width: 48px;
+        border-bottom: 2px solid $color-brown-14;
+        transition: all .4s;
+      }
+      &:hover a::after{
+        border-color: $color-green-0;
+        width: 80px;
+        transition: all .4s;
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.cover {
+  background-image: url(../../img/cover.jpg);
+  height: 500px;
+}
+.cover .cover__content {
+  max-width: 500px;
+}

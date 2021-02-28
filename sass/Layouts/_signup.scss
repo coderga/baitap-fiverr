@@ -1,0 +1,31 @@
+.signup {
+  width: 90%;
+  margin: 0 auto;
+  color: $color-white;
+  padding-bottom: 120px;
+  .jumbotron {
+    background-image: url(../../img/bg-signup-1400-x1.png);
+    height: 440px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // padding: 120px 96px;
+    margin-bottom: 0;
+    position: relative;
+    .jumbotron__content {
+        top: 50%;
+        left: 5%;
+        transform: translateY(-50%);
+        position: absolute;
+      h1 {
+        max-width: 650px;
+        font-size: $font-size-6 - 2;
+        line-height: $line-height-0;
+        font-weight: $font-weight-2;
+        padding-bottom: $padding-4 + 8;
+        i {
+          font-weight: $font-weight-1;
+        }
+      }
+    }
+  }
+}
